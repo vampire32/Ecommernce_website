@@ -140,6 +140,9 @@ body::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
           border-radius: 10px;
 }
+.collapse{
+  visibility: visible I !important;
+}
 
 body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 

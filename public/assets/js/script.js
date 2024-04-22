@@ -1,4 +1,3 @@
-'use strict';
 
 // modal variables
 const modal = document.querySelector('[data-modal]');

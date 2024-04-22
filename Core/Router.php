@@ -4,46 +4,43 @@ class Router{
 
     protected $routes=[];
 
-    public function get($uri,$controller){
+
+    public function add ($method,$uri,$controller){
         $this->routes[]=[
             'uri'=>$uri,
             'controller'=>$controller,
-            'method'=>'GET'
+            'method'=>$method
 
         ];
+        return $this;
+    }
+
+    public function get($uri,$controller){
+       return  $this->add('GET',$uri,$controller);
     }
 
     public function post($uri,$controller){
-        $this->routes[]=[
-            'uri'=>$uri,
-            'controller'=>$controller,
-            'method'=>'POST'
-        ];
+       return  $this->add('POST', $uri, $controller);
     }
 
     public function delete($uri,$controller){
-        $this->routes[]=[
-            'uri'=>$uri,
-            'controller'=>$controller,
-            'method'=>'DELETE'
-        ];
+       return  $this->add('DELETE', $uri, $controller);
     }
 
     public function patch($uri,$controller){
-        $this->routes[]=[
-            'uri'=>$uri,
-            'controller'=>$controller,
-            'method'=>'PATCH'
-        ];
+       return  $this->add('PATCH', $uri, $controller);
     }
 
     public function put($uri,$controller){
-        $this->routes[]=[
-            'uri'=>$uri,
-            'controller'=>$controller,
-            'method'=>'PUT'
+       return  $this->add('PUT', $uri, $controller);
+    }
 
-        ];
+    public function only($key){
+        $this->routes[array_key_last($this->routes)]['middleware']=$key;
+         
+        
+
+        return $this;
     }
 
 
@@ -55,6 +52,21 @@ class Router{
 
         foreach ($this->routes as $route) {
             if ($route['uri'] === $path && $route['method'] === strtoupper($method)) {
+
+                // if($route['middleware']=='guest'){
+                //     if($_SESSION['user_id']?? false){
+                //         header('location: /');
+                //         exit();
+                //     }
+                // }
+
+
+                // if($route['middleware']=='auth'){
+                //     if(!$_SESSION['user_id']??false){
+                //         header('location: /login');
+                //     }
+                // }
+
                 require BASE_PATH . $route['controller'];
                 return;
             }

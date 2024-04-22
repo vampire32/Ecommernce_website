@@ -14,6 +14,11 @@ $router->get('/singleproduct', 'controller/singleProduct.php');
 $router->get('/admin', 'controller/adminlogin.php');
 $router->get('/dashboard', 'controller/adminDashboard.php');
 $router->post('/registration', 'controller/Registration.php');
+$router->post('/login', 'controller/login.php');
+$router->post('/updateuser', 'controller/upadateuser.php');
+$router->get('/logout', 'controller/logout.php');
+$router->get('/checkout', 'controller/checkout.php');
+$router->get('/userprofile', 'controller/userprofile.php');
 
 $uri = $_SERVER['REQUEST_URI'];
 if (strpos($uri, '?') !== false) {

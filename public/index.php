@@ -3,6 +3,7 @@
 use Core\Router;
 
 const BASE_PATH=__DIR__ . '/../';
+const BASE_PATH2=__DIR__ . '/';
 
 
 
