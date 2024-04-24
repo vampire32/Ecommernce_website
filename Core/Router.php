@@ -1,5 +1,9 @@
 <?php
 namespace Core;
+
+use Middleware\AuthMiddleware;
+use Middleware\GuestMiddleware;
+
 class Router{
 
     protected $routes=[];
@@ -12,6 +16,16 @@ class Router{
             'method'=>$method
 
         ];
+        return $this;
+    }
+    public function middleware($uri, $middleware)
+    {
+        foreach ($this->routes as &$route) {
+            if ($route['uri'] === $uri) {
+                $route['middleware'] = $middleware;
+                break;
+            }
+        }
         return $this;
     }
 
@@ -50,29 +64,29 @@ class Router{
         $parsedUrl = parse_url($uri);
         $path = $parsedUrl['path'];
 
+
         foreach ($this->routes as $route) {
             if ($route['uri'] === $path && $route['method'] === strtoupper($method)) {
+                // Check middleware
+                if (isset($route['middleware'])) {
+                    // Execute middleware logic here
+                    if ($route['middleware'] === 'auth') {
+                        // Call AuthMiddleware
+                        \Middleware\AuthMiddleware::handle();
+                    } elseif ($route['middleware'] === 'guest') {
+                        // Call GuestMiddleware
+                        \Middleware\GuestMiddleware::handle();
+                    } elseif ($route['middleware'] === 'admin') {
+                        // Call AdminMiddleware
+                        \Middleware\AdminMiddleware::handle();
+                    }
+                }
 
-                // if($route['middleware']=='guest'){
-                //     if($_SESSION['user_id']?? false){
-                //         header('location: /');
-                //         exit();
-                //     }
-                // }
-
-
-                // if($route['middleware']=='auth'){
-                //     if(!$_SESSION['user_id']??false){
-                //         header('location: /login');
-                //     }
-                // }
-
+                // If no middleware or middleware check passed, execute the route
                 require BASE_PATH . $route['controller'];
                 return;
             }
         }
-
-        
     }
     
 
