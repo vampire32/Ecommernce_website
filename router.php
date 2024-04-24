@@ -22,6 +22,7 @@ $router->post('/product/update', 'controller/updateproduct.php')->middleware('/p
 $router->post('/products/create', 'controller/createproduct.php')->middleware('/products/create', 'admin');
 $router->post('/deleteproduct', 'controller/deleteproduct.php')->middleware('/deleteproduct', 'admin');
 $router->post('/admin/login', 'controller/adminlogin.php');
+$router->post('/products/filter','controller/filteproducts.php');
 $router->get('/admin/create', 'controller/admincreate.php');
 $router->get('/logout', 'controller/logout.php');
 $router->get('/checkout', 'controller/checkout.php')->middleware('/checkout', 'auth');

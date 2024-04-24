@@ -1,7 +1,25 @@
 <?php require 'partials/header.php' ?>
 <?php require 'partials/nav.php' ?>
 <?php require BASE_PATH . 'Core/showproducts.php' ?>
+<script>
+    // JavaScript to handle form submission and send selected checkbox values
+    document.getElementById('filterForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+        var form = this;
+        var formData = new FormData(form); // Create FormData object to collect form data
+        var xhr = new XMLHttpRequest(); // Create XMLHttpRequest object
+        xhr.open(form.method, form.action); // Set up request
 
+        // Define callback function to handle response
+        xhr.onload = function() {
+            // Handle response, e.g., update product list based on filtered results
+            console.log(xhr.responseText);
+        };
+
+        // Send request
+        xhr.send(formData);
+    });
+</script>
 
 <div class="container-fluid">
     <div class="row">
