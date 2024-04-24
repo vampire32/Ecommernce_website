@@ -1,7 +1,9 @@
 <?php
 
+
 namespace Middleware;
 
+session_start();
 class AuthMiddleware
 {
     public static function handle()

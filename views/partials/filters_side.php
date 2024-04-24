@@ -28,7 +28,7 @@
 
                 </div> <!-- card-body.// -->
             </div>
-        </article> <!-- filter-group  .// -->
+        </article> 
         <article class="filter-group">
             <header class="card-header">
                 <a href="#" data-toggle="collapse" data-target="#collapse_2" aria-expanded="true" class="">
@@ -70,60 +70,14 @@
                     </label>
                 </div> <!-- card-body.// -->
             </div>
-        </article> <!-- filter-group .// -->
+        </article> 
       
-        <article class="filter-group">
-            <header class="card-header">
-                <a href="#" data-toggle="collapse" data-target="#collapse_4" aria-expanded="true" class="">
-                    <i class="icon-control fa fa-chevron-down"></i>
-                    <h6 class="title">Sizes </h6>
-                </a>
-            </header>
-            <div class="filter-content collapse show" id="collapse_4" style="">
-                <div class="card-body">
-                    <label class="checkbox-btn">
-                        <input type="checkbox">
-                        <span class="btn btn-light"> XS </span>
-                    </label>
-
-                    <label class="checkbox-btn">
-                        <input type="checkbox">
-                        <span class="btn btn-light"> SM </span>
-                    </label>
-
-                    <label class="checkbox-btn">
-                        <input type="checkbox">
-                        <span class="btn btn-light"> LG </span>
-                    </label>
-
-                    <label class="checkbox-btn">
-                        <input type="checkbox">
-                        <span class="btn btn-light"> XXL </span>
-                    </label>
-                </div><!-- card-body.// -->
-            </div>
-        </article> <!-- filter-group .// -->
         
-    </div> <!-- card.// -->
+        
+    </div> 
 
 </aside>
 
 <main class="col-md-9">
 
-        <header class="border-bottom mb-4 pb-3">
-            <div class="form-inline">
-                <span class="mr-md-auto">32 Items found </span>
-                <select class="mr-2 form-control">
-                    <option>Latest items</option>
-                    <option>Trending</option>
-                    <option>Most Popular</option>
-                    <option>Cheapest</option>
-                </select>
-                <div class="btn-group">
-                    <a href="#" class="btn btn-outline-secondary" data-toggle="tooltip" title="" data-original-title="List view">
-                        <i class="fa fa-bars"></i></a>
-                    <a href="#" class="btn  btn-outline-secondary active" data-toggle="tooltip" title="" data-original-title="Grid view">
-                        <i class="fa fa-th"></i></a>
-                </div>
-            </div>
-        </header>
+      

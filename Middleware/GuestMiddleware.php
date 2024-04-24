@@ -2,6 +2,7 @@
 
 namespace Middleware;
 
+session_start();
 class GuestMiddleware
 {
     public static function handle()

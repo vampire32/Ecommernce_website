@@ -1,14 +1,13 @@
 <?php
 
 namespace Middleware;
-
+ session_start();
 class AdminMiddleware
 {
     public static function handle()
     {
-        // Assume $_SESSION['user_role'] contains the role of the user
-        if ($_SESSION['user_role'] !== 'admin') {
-            // Redirect or handle unauthorized access
+        // Check if user session is present
+        if (!isset($_SESSION['user_role'])) {
             header('Location: /admin');
             exit();
         }

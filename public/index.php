@@ -3,6 +3,8 @@
 use Core\Router;
 
 const BASE_PATH = __DIR__ . '/../';
+const BASE_PATH2 = __DIR__ . '/';
+const MIDDLEWARE_PATH = __DIR__ . '/../Middleware/';
 
 spl_autoload_register(function ($class) {
     $result = str_replace('\\', DIRECTORY_SEPARATOR, $class);

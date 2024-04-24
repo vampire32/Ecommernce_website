@@ -2,11 +2,28 @@
 namespace Core;
 
 use Middleware\AuthMiddleware;
+use Middleware\AdminMiddleware;
 use Middleware\GuestMiddleware;
 
 class Router{
 
     protected $routes=[];
+    private static $middlewareRegistry = [
+        'auth' => \Middleware\AuthMiddleware::class,
+        'guest' => \Middleware\GuestMiddleware::class,
+        'admin' => \Middleware\AdminMiddleware::class,
+        // Add more middleware mappings as needed
+    ];
+    private static function executeMiddleware($middleware)
+    {
+        if (isset(self::$middlewareRegistry[$middleware])) {
+            $middlewareClass = self::$middlewareRegistry[$middleware];
+            $middlewareClass::handle();
+        } else {
+            // Handle unsupported middleware
+            die("Unsupported middleware: {$middleware}");
+        }
+    }
 
 
     public function add ($method,$uri,$controller){
@@ -64,30 +81,49 @@ class Router{
         $parsedUrl = parse_url($uri);
         $path = $parsedUrl['path'];
 
-
+        // Find the matched route
+        $matchedRoute = null;
         foreach ($this->routes as $route) {
             if ($route['uri'] === $path && $route['method'] === strtoupper($method)) {
-                // Check middleware
-                if (isset($route['middleware'])) {
-                    // Execute middleware logic here
-                    if ($route['middleware'] === 'auth') {
-                        // Call AuthMiddleware
-                        \Middleware\AuthMiddleware::handle();
-                    } elseif ($route['middleware'] === 'guest') {
-                        // Call GuestMiddleware
-                        \Middleware\GuestMiddleware::handle();
-                    } elseif ($route['middleware'] === 'admin') {
-                        // Call AdminMiddleware
-                        \Middleware\AdminMiddleware::handle();
-                    }
-                }
-
-                // If no middleware or middleware check passed, execute the route
-                require BASE_PATH . $route['controller'];
-                return;
+                $matchedRoute = $route;
+                break;
             }
         }
+
+        if ($matchedRoute) {
+            // Check middleware
+            if (isset($matchedRoute['middleware'])) {
+                $middleware = $matchedRoute['middleware'];
+                switch ($middleware) {
+                    case 'auth':
+                        // Call AuthMiddleware
+                        AuthMiddleware::handle();
+                        break;
+                    case 'guest':
+                        // Call GuestMiddleware
+                        GuestMiddleware::handle();
+                        break;
+                    case 'admin':
+                        // Call AdminMiddleware
+                        AdminMiddleware::handle();
+                        break;
+                        // Add other middleware cases as needed
+                    default:
+                        // Handle unsupported middleware
+                        die("Unsupported middleware: {$middleware}");
+                }
+            }
+
+            // Execute the route controller
+            require BASE_PATH . $matchedRoute['controller'];
+        } else {
+            // Route not found
+            // You can implement a 404 page or redirect as needed
+            die("Route not found: {$path}");
+        }
     }
+
+
     
 
 }
