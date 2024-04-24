@@ -10,28 +10,29 @@
 
 
         <div class="row">
-            <div class="col-md-4">
-                <?php foreach ($products as $product) ?>
-                <figure class="card card-product-grid">
-                    <div class="img-wrap">
+            <?php foreach ($products as $product) : ?>
+                <div class="col-md-4">
 
-                        <img src="<?php echo $product['ProductPicture'] ?>" class="img-fluid">
+                    <figure class="card card-product-grid">
+                        <div class="img-wrap">
 
-                    </div> <!-- img-wrap.// -->
-                    <figcaption class="info-wrap">
-                        <div class="fix-height">
-                            <a href="/singleproduct?id=<?php echo $product['id']; ?>" class="title"><?php echo $product['ProductName'] ?></a>
-                            <div class="price-wrap mt-2">
-                                <span class="price"><?php echo $product['Productprice'] ?></span>
+                            <img src="<?php echo $product['ProductPicture'] ?>" class="img-fluid">
 
-                            </div> <!-- price-wrap.// -->
-                        </div>
-                        <a href="#" class="btn btn-block btn-primary">Add to cart </a>
-                        <a href="#" class="btn btn-block btn-primary">Buy Now </a>
-                    </figcaption>
-                </figure>
-            </div> <!-- col.// -->
+                        </div> <!-- img-wrap.// -->
+                        <figcaption class="info-wrap">
+                            <div class="fix-height">
+                                <a href="/singleproduct?id=<?php echo $product['id']; ?>" class="title"><?php echo $product['ProductName'] ?></a>
+                                <div class="price-wrap mt-2">
+                                    <span class="price"><?php echo $product['Productprice'] ?></span>
 
+                                </div> <!-- price-wrap.// -->
+                            </div>
+                            <a href="#" class="btn btn-block btn-primary">Add to cart </a>
+                            <a href="#" class="btn btn-block btn-primary">Buy Now </a>
+                        </figcaption>
+                    </figure>
+                </div> <!-- col.// -->
+            <?php endforeach; ?>
 
         </div> <!-- row end.// -->
 

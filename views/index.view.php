@@ -91,47 +91,33 @@ require 'partials/header.php' ?>
 
                     <div class="product-grid">
 
-                        <?php foreach ($products as $prdoct)
 
 
-                        ?>
+                        <?php foreach ($products as $product) : ?>
 
-                        <div class="">
-
-                            <div class="showcase-banner">
-
-                                <img src="<?php echo $prdoct['ProductPicture'] ?>" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
-
-
-
-                              
-
-                            </div>
-
-                            <div class="showcase-content">
-
-                                <a href="/singleproduct?id=<?php echo $prdoct['id']; ?>" class="showcase-category">jacket</a>
-
-                                <a href="#">
-                                    <h3 class="showcase-title">Mens Winter Leathers Jackets</h3>
-                                </a>
-
-                                <!-- <div class="showcase-rating">
-                                    <ion-icon name="star"></ion-icon>
-                                    <ion-icon name="star"></ion-icon>
-                                    <ion-icon name="star"></ion-icon>
-                                    <ion-icon name="star-outline"></ion-icon>
-                                    <ion-icon name="star-outline"></ion-icon>
-                                </div> -->
-
-                                <div class="price-box">
-                                    <p class="price"><?php echo $prdoct['Productprice'] ?></p>
-                                    
+                            <div class="">
+                                <div class="showcase-banner">
+                                    <img src="<?php echo $product['ProductPicture']; ?>" alt="<?php echo $product['ProductName']; ?>" width="300" class="product-img default">
                                 </div>
-
+                                <div class="showcase-content">
+                                    <a href="/singleproduct?id=<?php echo $product['id']; ?>" class="showcase-category"><?php echo $product['Catgory']; ?></a>
+                                    <a href="#">
+                                        <h3 class="showcase-title"><?php echo $product['ProductName']; ?></h3>
+                                    </a>
+                                    <!-- <div class="showcase-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+            </div> -->
+                                    <div class="price-box">
+                                        <p class="price"><?php echo $product['Productprice']; ?></p>
+                                    </div>
+                                </div>
                             </div>
 
-                        </div>
+                        <?php endforeach; ?>
 
 
 
@@ -154,7 +140,7 @@ require 'partials/header.php' ?>
             - TESTIMONIALS
           -->
 
-               
+
 
             </div>
 

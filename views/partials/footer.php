@@ -303,13 +303,13 @@
       // Function to open the sidebar modal
       function openSidebarModal() {
           sidebarModal.style.width = "250px";
-          sidebarModal.style.visibility="visible"; // Adjust width as needed
+          sidebarModal.style.visibility = "visible"; // Adjust width as needed
       }
 
       // Function to close the sidebar modal
       function closeSidebarModal() {
           sidebarModal.style.width = "0";
-          sidebarModal.style.visibility="hidden";
+          sidebarModal.style.visibility = "hidden";
       }
 
       // Event listener for the cart button
@@ -322,6 +322,7 @@
           }
       });
   </script>
+
 
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

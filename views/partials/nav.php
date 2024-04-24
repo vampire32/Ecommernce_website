@@ -2,6 +2,8 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
+
+
 ?>
 <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
@@ -40,12 +42,19 @@ if (session_status() == PHP_SESSION_NONE) {
                     <i class="fa fa-shopping-cart text-[40px] text-blue-500" aria-hidden="true"></i>
 
                 </a>
-                <div id="sidebarModal" class="sidebar-modal">
+                <div id="sidebarModal" class="sidebar-modal ">
                     <!-- Sidebar content goes here -->
-                    <div class="sidebar-content">
+                    <div id="cartContent" class="sidebar-content">
                         <span class="close-button" onclick="closeSidebarModal()">&times;</span>
-                        <h2>Cart</h2>
-                        <!-- Cart items and other content -->
+                        <h2 class="text-center font-bold">Cart Item</h2>
+                        <div class="container">
+                            <div class="row">
+
+                               
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
