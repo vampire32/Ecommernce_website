@@ -132,6 +132,9 @@
                             <th scope="col" class="px-6 py-3">
                                 User Address
                             </th>
+                            <th scope="col" class="px-6 py-3">
+                                Order Status
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -159,6 +162,22 @@
                                 </td>
                                 <td class="px-6 py-4">
                                     <?php echo $order['UserAddress'] ?>
+
+
+                                </td>
+                                <td class="px-6 py-4">
+                                    <form action="/order/update" method="post">
+                                        <input type="hidden" name="orderid" value="<?php echo $order['id'] ?>">
+
+                                        <select name="status" id="status">
+                                            <option value="<?php echo $order['status'] ?>" selected><?php echo $order['status'] ?></option>
+                                            <option value="Shipping">Shipping</option>
+                                            <option value="Deliverd">Deliverd</option>
+                                            <option value="Pending">Pending</option>
+                                        </select>
+                                        <button type="submit" >update</button>
+                                    </form>
+
 
 
                                 </td>

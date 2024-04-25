@@ -1,333 +1,82 @@
-  <footer>
-
-      <div class="footer-category">
-
-          <div class="container">
-
-              <h2 class="footer-category-title">Brand directory</h2>
-
-              <div class="footer-category-box">
-
-                  <h3 class="category-box-title">Fashion :</h3>
-
-                  <a href="#" class="footer-category-link">T-shirt</a>
-                  <a href="#" class="footer-category-link">Shirts</a>
-                  <a href="#" class="footer-category-link">shorts & jeans</a>
-                  <a href="#" class="footer-category-link">jacket</a>
-                  <a href="#" class="footer-category-link">dress & frock</a>
-                  <a href="#" class="footer-category-link">innerwear</a>
-                  <a href="#" class="footer-category-link">hosiery</a>
-
-              </div>
-
-              <div class="footer-category-box">
-                  <h3 class="category-box-title">footwear :</h3>
-
-                  <a href="#" class="footer-category-link">sport</a>
-                  <a href="#" class="footer-category-link">formal</a>
-                  <a href="#" class="footer-category-link">Boots</a>
-                  <a href="#" class="footer-category-link">casual</a>
-                  <a href="#" class="footer-category-link">cowboy shoes</a>
-                  <a href="#" class="footer-category-link">safety shoes</a>
-                  <a href="#" class="footer-category-link">Party wear shoes</a>
-                  <a href="#" class="footer-category-link">Branded</a>
-                  <a href="#" class="footer-category-link">Firstcopy</a>
-                  <a href="#" class="footer-category-link">Long shoes</a>
-              </div>
-
-              <div class="footer-category-box">
-                  <h3 class="category-box-title">jewellery :</h3>
-
-                  <a href="#" class="footer-category-link">Necklace</a>
-                  <a href="#" class="footer-category-link">Earrings</a>
-                  <a href="#" class="footer-category-link">Couple rings</a>
-                  <a href="#" class="footer-category-link">Pendants</a>
-                  <a href="#" class="footer-category-link">Crystal</a>
-                  <a href="#" class="footer-category-link">Bangles</a>
-                  <a href="#" class="footer-category-link">bracelets</a>
-                  <a href="#" class="footer-category-link">nosepin</a>
-                  <a href="#" class="footer-category-link">chain</a>
-                  <a href="#" class="footer-category-link">Earrings</a>
-                  <a href="#" class="footer-category-link">Couple rings</a>
-              </div>
-
-              <div class="footer-category-box">
-                  <h3 class="category-box-title">cosmetics :</h3>
-
-                  <a href="#" class="footer-category-link">Shampoo</a>
-                  <a href="#" class="footer-category-link">Bodywash</a>
-                  <a href="#" class="footer-category-link">Facewash</a>
-                  <a href="#" class="footer-category-link">makeup kit</a>
-                  <a href="#" class="footer-category-link">liner</a>
-                  <a href="#" class="footer-category-link">lipstick</a>
-                  <a href="#" class="footer-category-link">prefume</a>
-                  <a href="#" class="footer-category-link">Body soap</a>
-                  <a href="#" class="footer-category-link">scrub</a>
-                  <a href="#" class="footer-category-link">hair gel</a>
-                  <a href="#" class="footer-category-link">hair colors</a>
-                  <a href="#" class="footer-category-link">hair dye</a>
-                  <a href="#" class="footer-category-link">sunscreen</a>
-                  <a href="#" class="footer-category-link">skin loson</a>
-                  <a href="#" class="footer-category-link">liner</a>
-                  <a href="#" class="footer-category-link">lipstick</a>
-              </div>
-
-          </div>
-
-      </div>
-
-      <div class="footer-nav">
-
-          <div class="container">
-
-              <ul class="footer-nav-list">
-
-                  <li class="footer-nav-item">
-                      <h2 class="nav-title">Popular Categories</h2>
-                  </li>
-
-                  <li class="footer-nav-item">
-                      <a href="#" class="footer-nav-link">Fashion</a>
-                  </li>
-
-                  <li class="footer-nav-item">
-                      <a href="#" class="footer-nav-link">Electronic</a>
-                  </li>
-
-                  <li class="footer-nav-item">
-                      <a href="#" class="footer-nav-link">Cosmetic</a>
-                  </li>
-
-                  <li class="footer-nav-item">
-                      <a href="#" class="footer-nav-link">Health</a>
-                  </li>
-
-                  <li class="footer-nav-item">
-                      <a href="#" class="footer-nav-link">Watches</a>
-                  </li>
-
-              </ul>
-
-              <ul class="footer-nav-list">
-
-                  <li class="footer-nav-item">
-                      <h2 class="nav-title">Products</h2>
-                  </li>
-
-                  <li class="footer-nav-item">
-                      <a href="#" class="footer-nav-link">Prices drop</a>
-                  </li>
-
-                  <li class="footer-nav-item">
-                      <a href="#" class="footer-nav-link">New products</a>
-                  </li>
-
-                  <li class="footer-nav-item">
-                      <a href="#" class="footer-nav-link">Best sales</a>
-                  </li>
-
-                  <li class="footer-nav-item">
-                      <a href="#" class="footer-nav-link">Contact us</a>
-                  </li>
-
-                  <li class="footer-nav-item">
-                      <a href="#" class="footer-nav-link">Sitemap</a>
-                  </li>
-
-              </ul>
-
-              <ul class="footer-nav-list">
-
-                  <li class="footer-nav-item">
-                      <h2 class="nav-title">Our Company</h2>
-                  </li>
-
-                  <li class="footer-nav-item">
-                      <a href="#" class="footer-nav-link">Delivery</a>
-                  </li>
-
-                  <li class="footer-nav-item">
-                      <a href="#" class="footer-nav-link">Legal Notice</a>
-                  </li>
-
-                  <li class="footer-nav-item">
-                      <a href="#" class="footer-nav-link">Terms and conditions</a>
-                  </li>
-
-                  <li class="footer-nav-item">
-                      <a href="#" class="footer-nav-link">About us</a>
-                  </li>
-
-                  <li class="footer-nav-item">
-                      <a href="#" class="footer-nav-link">Secure payment</a>
-                  </li>
-
-              </ul>
-
-              <ul class="footer-nav-list">
-
-                  <li class="footer-nav-item">
-                      <h2 class="nav-title">Services</h2>
-                  </li>
-
-                  <li class="footer-nav-item">
-                      <a href="#" class="footer-nav-link">Prices drop</a>
-                  </li>
-
-                  <li class="footer-nav-item">
-                      <a href="#" class="footer-nav-link">New products</a>
-                  </li>
-
-                  <li class="footer-nav-item">
-                      <a href="#" class="footer-nav-link">Best sales</a>
-                  </li>
-
-                  <li class="footer-nav-item">
-                      <a href="#" class="footer-nav-link">Contact us</a>
-                  </li>
-
-                  <li class="footer-nav-item">
-                      <a href="#" class="footer-nav-link">Sitemap</a>
-                  </li>
-
-              </ul>
-
-              <ul class="footer-nav-list">
-
-                  <li class="footer-nav-item">
-                      <h2 class="nav-title">Contact</h2>
-                  </li>
-
-                  <li class="footer-nav-item flex">
-                      <div class="icon-box">
-                          <ion-icon name="location-outline"></ion-icon>
-                      </div>
-
-                      <address class="content">
-                          419 State 414 Rte
-                          Beaver Dams, New York(NY), 14812, USA
-                      </address>
-                  </li>
-
-                  <li class="footer-nav-item flex">
-                      <div class="icon-box">
-                          <ion-icon name="call-outline"></ion-icon>
-                      </div>
-
-                      <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
-                  </li>
-
-                  <li class="footer-nav-item flex">
-                      <div class="icon-box">
-                          <ion-icon name="mail-outline"></ion-icon>
-                      </div>
-
-                      <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
-                  </li>
-
-              </ul>
-
-              <ul class="footer-nav-list">
-
-                  <li class="footer-nav-item">
-                      <h2 class="nav-title">Follow Us</h2>
-                  </li>
-
-                  <li>
-                      <ul class="social-link">
-
-                          <li class="footer-nav-item">
-                              <a href="#" class="footer-nav-link">
-                                  <ion-icon name="logo-facebook"></ion-icon>
-                              </a>
-                          </li>
-
-                          <li class="footer-nav-item">
-                              <a href="#" class="footer-nav-link">
-                                  <ion-icon name="logo-twitter"></ion-icon>
-                              </a>
-                          </li>
-
-                          <li class="footer-nav-item">
-                              <a href="#" class="footer-nav-link">
-                                  <ion-icon name="logo-linkedin"></ion-icon>
-                              </a>
-                          </li>
-
-                          <li class="footer-nav-item">
-                              <a href="#" class="footer-nav-link">
-                                  <ion-icon name="logo-instagram"></ion-icon>
-                              </a>
-                          </li>
-
-                      </ul>
-                  </li>
-
-              </ul>
-
-          </div>
-
-      </div>
-
-      <div class="footer-bottom">
-
-          <div class="container">
-
-              <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
-
-              <p class="copyright">
-                  Copyright &copy; <a href="#">Anon</a> all rights reserved.
-              </p>
-
-          </div>
-
-      </div>
-
-  </footer>
-
-
-
-
-
-
-  <script src="/assets/js/script.js"></script>
-  <script>
-
-
-  </script>
-  <script>
-      // Get references to the cart button and sidebar modal
-      var cartButton = document.getElementById("cartButton");
-      var sidebarModal = document.getElementById("sidebarModal");
-
-      // Function to open the sidebar modal
-      function openSidebarModal() {
-          sidebarModal.style.width = "250px";
-          sidebarModal.style.visibility = "visible"; // Adjust width as needed
-      }
-
-      // Function to close the sidebar modal
-      function closeSidebarModal() {
-          sidebarModal.style.width = "0";
-          sidebarModal.style.visibility = "hidden";
-      }
-
-      // Event listener for the cart button
-      cartButton.addEventListener("click", function() {
-          // Toggle the visibility of the sidebar modal
-          if (sidebarModal.style.width === "250px") {
-              closeSidebarModal();
-          } else {
-              openSidebarModal();
-          }
-      });
-  </script>
-
-
-
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  </body>
-
-  </html>
+ <footer class="text-gray-600 body-font">
+     <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+         <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+             </svg>
+             <span class="ml-3 text-xl text-blue-500">ISHOP</span>
+         </a>
+       
+         <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+             <a class="text-gray-500">
+                 <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                     <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                 </svg>
+             </a>
+             <a class="ml-3 text-gray-500">
+                 <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                     <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                 </svg>
+             </a>
+             <a class="ml-3 text-gray-500">
+                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                     <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                     <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                 </svg>
+             </a>
+             <a class="ml-3 text-gray-500">
+                 <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                     <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                     <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                 </svg>
+             </a>
+         </span>
+     </div>
+ </footer>
+
+
+
+
+
+
+ <script src="/assets/js/script.js"></script>
+ <script>
+
+
+ </script>
+ <script>
+     // Get references to the cart button and sidebar modal
+     var cartButton = document.getElementById("cartButton");
+     var sidebarModal = document.getElementById("sidebarModal");
+
+     // Function to open the sidebar modal
+     function openSidebarModal() {
+         sidebarModal.style.width = "250px";
+         sidebarModal.style.visibility = "visible"; // Adjust width as needed
+     }
+
+     // Function to close the sidebar modal
+     function closeSidebarModal() {
+         sidebarModal.style.width = "0";
+         sidebarModal.style.visibility = "hidden";
+     }
+
+     // Event listener for the cart button
+     cartButton.addEventListener("click", function() {
+         // Toggle the visibility of the sidebar modal
+         if (sidebarModal.style.width === "250px") {
+             closeSidebarModal();
+         } else {
+             openSidebarModal();
+         }
+     });
+ </script>
+
+
+
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+ </body>
+
+ </html>

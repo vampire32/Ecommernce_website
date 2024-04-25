@@ -15,6 +15,10 @@ if ($id !== null) {
 
     // Fetch the product details
     $product = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    $stmt2=$pdo->prepare("SELECT * FROM reviews WHERE ProductID=$id");
+    $stmt2->execute();
+    $reviews=$stmt2->fetchAll(PDO::FETCH_ASSOC);
     
 } else {
   

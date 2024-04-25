@@ -9,6 +9,7 @@ $router->get('/login', 'controller/login.php')->middleware('/login', 'guest');
 $router->get('/signup', 'controller/signup.php')->middleware('/userprofile', 'guest');
 $router->get('/about', 'controller/about.php');
 $router->get('/contact', 'controller/contact.php');
+$router->post('/contact', 'controller/contact.php');
 $router->get('/products', 'controller/products.php');
 $router->get('/singleproduct', 'controller/singleProduct.php');
 $router->get('/admin', 'controller/adminlogin.php');
@@ -22,6 +23,8 @@ $router->post('/product/update', 'controller/updateproduct.php')->middleware('/p
 $router->post('/products/create', 'controller/createproduct.php')->middleware('/products/create', 'admin');
 $router->post('/deleteproduct', 'controller/deleteproduct.php')->middleware('/deleteproduct', 'admin');
 $router->post('/admin/login', 'controller/adminlogin.php');
+$router->post('/review','controller/review.php')->middleware('/review', 'auth');
+$router->post('/order/update','controller/updateorder.php');
 $router->post('/products/filter','controller/filteproducts.php');
 $router->get('/admin/create', 'controller/admincreate.php');
 $router->get('/logout', 'controller/logout.php');

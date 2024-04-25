@@ -132,19 +132,7 @@ require 'partials/header.php' ?>
     </div>
     <div>
 
-        <div class="container">
-
-            <div class="testimonials-box">
-
-                <!--
-            - TESTIMONIALS
-          -->
-
-
-
-            </div>
-
-        </div>
+        <?php require 'partials/testimonial.php' ?>
 
     </div>
 </main>
