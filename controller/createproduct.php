@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $ProductPrice = $_POST['productprice'];
     $catgory = $_POST['catgory'];
 
-    // File upload handling
+    
     if (isset($_FILES["product_picture"]) && $_FILES["product_picture"]["error"] !== UPLOAD_ERR_NO_FILE) {
         $targetDirectory = "uploads/";
         $fileName = basename($_FILES["product_picture"]["name"]);
@@ -37,14 +37,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Sorry, your file was not uploaded.";
         } else {
             if (move_uploaded_file($_FILES["product_picture"]["tmp_name"], BASE_PATH2 . $targetFile)) {
-                // File uploaded successfully
+                
             } else {
                 echo "Sorry, there was an error uploading your file.";
             }
         }
         echo $targetFile;
     } else {
-        // If no file is uploaded, set targetFile to null
+       
         $targetFile = null;
     }
 
@@ -52,10 +52,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $databaseConnection = new Database();
         $pdo = $databaseConnection->connection;
 
-        // Update user query
+        
         $stmt = $pdo->prepare("INSERT INTO products (BrandName, ProductName, ProductDescription, Productprice, ProductPicture, Catgory) VALUES (?, ?, ?, ?, ?, ?)");
 
-        // Bind parameters to avoid SQL injection
+        
         $stmt->bindParam(1, $BrandName);
         $stmt->bindParam(2, $ProductName);
         $stmt->bindParam(3, $ProductDescription);
@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bindParam(5, $targetFile);
         $stmt->bindParam(6, $catgory);
 
-        // Execute the statement
+       
         $stmt->execute();
 
         echo 'Product is successfully added';

@@ -6,7 +6,7 @@ require_once  BASE_PATH . 'Core/Database.php';
 
 session_start();
 
-// Check if the session is already set
+
 if (isset($_SESSION['user_id'])) {
   
      header("Location: /");
@@ -34,8 +34,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['email'] = $user['email'];
             $_COOKIE['user_id']= $user['id'];
 
-            // Redirect to index view
-            require BASE_PATH . "views/index.view.php";
+           
+            header('location: /');
             exit();
         } else {
             echo "Invalid password.";

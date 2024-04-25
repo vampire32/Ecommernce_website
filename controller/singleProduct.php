@@ -13,7 +13,7 @@ if ($id !== null) {
     $stmt = $pdo->prepare("SELECT * FROM products WHERE id = $id");
     $stmt->execute();
 
-    // Fetch the product details
+   
     $product = $stmt->fetch(PDO::FETCH_ASSOC);
 
     $stmt2=$pdo->prepare("SELECT * FROM reviews WHERE ProductID=$id");

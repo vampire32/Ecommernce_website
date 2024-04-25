@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
  
 
-    // File upload handling
+ 
     if (isset($_FILES["profile_picture"]) && $_FILES["profile_picture"]["error"] !== UPLOAD_ERR_NO_FILE) {
         $targetDirectory = "uploads/";
         $fileName = basename($_FILES["profile_picture"]["name"]);
@@ -45,14 +45,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Sorry, your file was not uploaded.";
         } else {
             if (move_uploaded_file($_FILES["profile_picture"]["tmp_name"], BASE_PATH2 . $targetFile)) {
-                // File uploaded successfully
+                
             } else {
                 echo "Sorry, there was an error uploading your file.";
             }
         }
         echo $targetFile;
     } else {
-        // If no file is uploaded, set targetFile to null
+        
         $targetFile = null;
     }
 
@@ -60,10 +60,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $databaseConnection = new Database();
         $pdo = $databaseConnection->connection;
 
-        // Update user query
+        
         $stmt = $pdo->prepare("UPDATE users SET fullname = :fullname, email = :email, number = :number,  pictures = :pictures, Address=:address WHERE id = :id");
 
-        // Bind parameters directly in the execute method
+        
         $stmt->execute([
             ':id' => $user_id,
             ':fullname' => $fullname,

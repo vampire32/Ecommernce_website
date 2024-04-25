@@ -12,34 +12,34 @@ if (isset($_POST['product_id'])) {
     $databaseConnection = new Database();
     $conn = $databaseConnection->connection;
 
-    // Check if the product is already in the cart
+   
     if (isset($_SESSION['cart'][$productId])) {
-        // If yes, increment the quantity
+        
         $_SESSION['cart'][$productId]['qty']++;
     } else {
-        // If not, fetch the product details from the database
+        
         $stmt = $conn->prepare("SELECT * FROM products WHERE id = $productId");
         $stmt->execute();
 
-        // Check if product exists
+       
         if ($stmt->rowCount() > 0) {
             $product = $stmt->fetch(PDO::FETCH_ASSOC);
 
-            // Add the product to the cart with a quantity of 1
+            
             $_SESSION['cart'][$productId] = array(
                 'id' => $product['id'],
                 'name' => $product['ProductName'],
                 'price' => $product['Productprice'],
-                'image' => $product['ProductPicture'], // Store the image URL
+                'image' => $product['ProductPicture'], 
                 'qty' => 1
             );
         } else {
             echo "Product not found.";
-            exit; // Terminate script execution
+            exit; 
         }
     }
 
-    // Generate HTML for the cart item
+   
     ob_start();
 
     function clearcart()

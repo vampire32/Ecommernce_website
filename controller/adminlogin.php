@@ -6,9 +6,7 @@ require_once  BASE_PATH . 'Core/Database.php';
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-var_dump($_SESSION['user_role']);
 
-// Check if the session is already set
 
 
 $database = new Database();
@@ -32,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['user_role'] = $admin['username'];
             $_COOKIE['user_role'] = $admin['username'];
 
-            // Redirect to index view
+            
             header('location: /dashboard');
             exit();
         } else {

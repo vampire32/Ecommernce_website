@@ -7,7 +7,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $databaseConnection = new Database();
     $pdo = $databaseConnection->connection;
 
-    // Prepare the statement
+   
     $stmt = $pdo->prepare("SELECT * FROM products WHERE BrandName=$BrandName");
     $stmt->execute();
     $products = $stmt->fetchAll(PDO::FETCH_ASSOC);

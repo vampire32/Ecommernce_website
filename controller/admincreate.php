@@ -7,10 +7,6 @@ var_dump($_SERVER['REQUEST_METHOD']);
 
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
     
-
-    // File upload handling
-    
-    // Hash password
     $hashed_password = password_hash("admin@123", PASSWORD_DEFAULT);
 
     try {

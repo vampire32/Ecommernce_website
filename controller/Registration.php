@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $number = $_POST["number"];
     $password = $_POST["password"];
 
-    // File upload handling
+    
     if (isset($_FILES["profile_picture"])) {
         $targetDirectory = "uploads/"; 
         $fileName = basename($_FILES["profile_picture"]["name"]);
@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    // Hash password
+ 
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
     try {
@@ -62,13 +62,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $stmt = $pdo->prepare("INSERT INTO users (fullname, email, number, password, pictures) VALUES (:fullname, :email, :number, :password, :pictures)");
 
-        // Bind parameters directly in the execute method
+       
         $stmt->execute([
             ':fullname' => $fullname,
             ':email' => $email,
             ':number' => $number,
             ':password' => $hashed_password,
-            ':pictures' => $targetFile // Store file path in the database
+            ':pictures' => $targetFile 
         ]);
 
         require BASE_PATH . 'views/registrated.view.php';

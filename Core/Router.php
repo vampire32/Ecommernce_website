@@ -117,8 +117,7 @@ class Router{
             // Execute the route controller
             require BASE_PATH . $matchedRoute['controller'];
         } else {
-            // Route not found
-            // You can implement a 404 page or redirect as needed
+           
             die("Route not found: {$path}");
         }
     }
